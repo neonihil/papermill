@@ -12,7 +12,7 @@ import yaml
 
 from . import __version__
 from .exceptions import PapermillException
-from .s3 import S3
+# from .s3 import S3
 
 
 class PapermillIO(object):
@@ -110,7 +110,7 @@ class S3Handler(object):
 # Instantiate a PapermillIO instance and register Handlers.
 papermill_io = PapermillIO()
 papermill_io.register("local", LocalHandler)
-papermill_io.register("s3://", S3Handler)
+# papermill_io.register("s3://", S3Handler)
 papermill_io.register("http://", HttpHandler)
 papermill_io.register("https://", HttpHandler)
 
